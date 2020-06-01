@@ -7,7 +7,7 @@
 </head>
 <body>
 	<div>
-		<h2>Reimbursement Form</h2>
+		<h2>View an in process Form</h2>
 	</div>
 	<div>
 	<input type = "text" id = "formCheck" placeholder = "Enter form id"/>
@@ -26,7 +26,9 @@
 	<h2 id = "appCode3"></h2>
 	<h2 id = "reason"></h2>
 	</div>
-	<br>
+	<div>
+		<h2>Reimbursement Form</h2>
+	</div>
 	<div>
 		<form enctype = "application/json" method = "POST" id="trmsForm">
 			User Name: <input type = "text" name = "uName">
@@ -59,7 +61,9 @@
 			<input type = "submit" name = "submitme" id = "tutFormSubmit">
 		</form>
 		</div>
-		<br>
+		<div>
+		<h2>Approve/Deny Form</h2>
+		</div>
 		<div>
 		<form action = "headAD" method = "POST" id = "ADsup">
 			Form ID: <input type = "text" name = "formNum"/>
@@ -71,6 +75,15 @@
 			<input type = "submit" name = "submitme" id = "ApproveDeny">
 		</form>
 	</div>
-	<script type="text/javascript" src = btut.js></script>
+	<div>
+	<h2>Get Your Remaining Balance</h2>
+	</div>
+	<div>
+	<input type = "text" id = "AmtCheck" placeholder = "Enter Username"/>
+	<input type = "submit" value = "Get Amt" id = "AmtGet"/>
+	<h2 id = "uName"></h2>
+	<h2 id = "amt"></h2>
+	</div>
+	<script type="text/javascript" src = htut.js></script>
 </body>
 </html>

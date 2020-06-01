@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import com.revature.beans.Money;
 import com.revature.beans.empForm;
 import com.revature.beans.employee;
 import com.revature.servlet.BLog;
@@ -341,6 +342,19 @@ public void ApproveBen(int num, int cost, String type, String name) throws SQLEx
 			ps8.executeUpdate();
 		}
 	}
+}
+
+public Money getAmtbyID(String id) throws SQLException{
+	Money m = null;
+	//String name = LoginServ.userName;
+	Connection conn = cf.getConnection();
+	Statement stmt = conn.createStatement();
+	ResultSet rs = stmt.executeQuery("SELECT * FROM MONEY WHERE USER_NAME= '" + id + "'");
+	while(rs.next()) {
+		m = new Money(rs.getString(1), rs.getInt(2));
+	}
+	
+	return m;
 }
 
 }

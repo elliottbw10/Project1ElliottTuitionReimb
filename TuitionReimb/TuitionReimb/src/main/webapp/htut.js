@@ -2,6 +2,7 @@ window.onload = function(){
 	console.log("in onload");
 	document.getElementById("formGet").addEventListener("click",getForm,false);
 	document.getElementById("tutFormSubmit").addEventListener("click",postForm,false);
+	document.getElementById("AmtGet").addEventListener("click",getAmt,false);
 }
 
 function getForm(){
@@ -65,4 +66,26 @@ function postForm(){
     xhr.open("POST","http://localhost:8080/TuitionReimb/headForm",true);
     var payload = jsonBuilder();
     xhr.send(payload);
+}
+
+function getAmt(){
+	console.log("in get");
+	let Userid = document.getElementById("AmtCheck").value;
+	var xhr = new XMLHttpRequest();
+	xhr.onreadystatechange = function(){
+		console.log( "in ORSC" + xhr.readyState);
+		if(xhr.readyState == 4 && xhr.status == 200){
+			var am = JSON.parse(xhr.responseText);
+			loadAmt(am);
+		}
+	}
+	
+	xhr.open("GET", "http://localhost:8080/TuitionReimb/headAD?Userid="+Userid,true);
+	xhr.send();
+}
+
+function loadAmt(am){
+	document.getElementById("uName").innerHTML = am.amt;
+	document.getElementById("amt").innerHTML = am.amt;
+	
 }

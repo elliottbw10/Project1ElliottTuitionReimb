@@ -7,7 +7,7 @@
 </head>
 <body>
 	<div>
-		<h2>Reimbursement Form</h2>
+		<h2>View an in process Form</h2>
 	</div>
 	<div>
 	<input type = "text" id = "formCheck" placeholder = "Enter form id"/>
@@ -25,6 +25,9 @@
 	<h2 id = "appCode2"></h2>
 	<h2 id = "appCode3"></h2>
 	<h2 id = "reason"></h2>
+	</div>
+	<div>
+		<h2>Reimbursement Form</h2>
 	</div>
 	<div>
 		<form enctype = "application/json" method = "POST" id="trmsForm">
@@ -57,6 +60,15 @@
 			<br>
 			<input type = "submit" name = "submitme" id = "tutFormSubmit">
 		</form>
+	</div>
+	<div>
+	<h2>Get Your Remaining Balance</h2>
+	</div>
+	<div>
+	<input type = "text" id = "AmtCheck" placeholder = "Enter Username"/>
+	<input type = "submit" value = "Get Amt" id = "AmtGet"/>
+	<h2 id = "uName"></h2>
+	<h2 id = "amt"></h2>
 	</div>
 	<script type="text/javascript" src = tut.js></script>
 </body>
