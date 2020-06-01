@@ -240,16 +240,16 @@ public void Approve2(int num) throws SQLException{
 }
 
 
-public void ApproveBen(int num, int cost, String type, String name, String res) throws SQLException{
+public void ApproveBen(int num, int cost, String type, String name) throws SQLException{
 	int amtU = 0;
 	Connection conn = cf.getConnection();
 	Statement stm = conn.createStatement();
-	//String a = "Approved";
+	String a = "Approved";
 	String sql = "UPDATE TRMS2 SET APP_CODE3 =" +300+ " WHERE FORM_ID =" + num;
 	PreparedStatement ps = conn.prepareStatement(sql);
 	ps.executeUpdate();
 	
-	String sql2 = "UPDATE TRMS2 SET REASON ='" +res+ "' WHERE FORM_ID =" + num;
+	String sql2 = "UPDATE TRMS2 SET REASON ='" +a+ "' WHERE FORM_ID =" + num;
 	PreparedStatement ps2 = conn.prepareStatement(sql2);
 	ps2.executeUpdate();
 	

@@ -58,7 +58,7 @@ public class benAd extends HttpServlet {
 		if(dec.equals("Approve")) {
 			TuitionDao td = new TuitionDao();
 			try {
-				td.ApproveBen(formNum, costy, type, nameU, res);
+				td.ApproveBen(formNum, costy, type, nameU);
 				System.out.println("app");
 				RequestDispatcher rd = request.getRequestDispatcher("index.html");
 				rd.forward(request, response);
