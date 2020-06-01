@@ -1,0 +1,53 @@
+package com.revature.servlet;
+
+import java.io.IOException;
+import java.sql.SQLException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.revature.dao.TuitionDao;
+
+/**
+ * Servlet implementation class supAd
+ */
+public class supAd extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    public supAd() {
+        super();
+    }
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String form = request.getParameter("formNum");
+		String dec = request.getParameter("desType");
+		int formNum = Integer.parseInt(form);
+		
+		if(dec.equals("Approve")) {
+			TuitionDao td = new TuitionDao();
+			try {
+				td.Approve(formNum);
+				System.out.println("app");
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		
+		else if(dec.equals("Deny")) {
+			TuitionDao td = new TuitionDao();
+			try {
+				td.Deny(formNum);
+				System.out.println("den");
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+}

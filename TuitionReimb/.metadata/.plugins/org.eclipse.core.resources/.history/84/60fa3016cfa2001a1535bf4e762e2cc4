@@ -1,0 +1,9 @@
+package com.revature.servlet;
+
+import javax.servlet.http.HttpServlet;
+
+public class LoginServlet extends HttpServlet {
+
+	private static final long serialVersionUID = 817105812389880890L;
+
+}

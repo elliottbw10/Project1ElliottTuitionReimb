@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Tuition Reimb</title>
+</head>
+<body>
+	<form method="post" action="login">
+	ID Number:<input type="text" name="ID" /><br/>
+	Password:<input type="text" name="pass" /><br/>
+	<input type="submit" value="login" />
+	</form>
+</body>
+</html>

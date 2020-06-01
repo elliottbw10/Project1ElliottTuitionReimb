@@ -1,0 +1,40 @@
+package com.revature.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+import com.revature.beans.employee;
+import com.revature.util.ConnFactory;
+
+public class TuitionDao {
+	
+	public static ConnFactory cf = ConnFactory.getInstance();
+	
+	public static employee checkUser(String id) {
+		
+		employee st=null;
+		//boolean rt = false;
+		try {
+			Connection conn = cf.getConnection();
+			String sql = "SELECT * FROM EMP2 WHERE USER_NAME=?";
+			PreparedStatement ps = conn.prepareStatement(sql);
+			ps.setString(1, id);
+			//ps.setString(2, pass);
+			ResultSet rs = ps.executeQuery();
+			while(rs.next()) {
+				st = new employee(
+						rs.getString(1),
+						rs.getString(2),
+						rs.getString(3),
+						rs.getString(4),
+						rs.getInt(5)
+						);
+			}
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		return st;
+	}
+
+}

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Home</title>
+</head>
+<body>
+	<div>
+		<h2>Reimbursement Form</h2>
+	</div>
+	<div>
+		<h2>id = ""</h2>
+	</div>
+</body>
+</html>

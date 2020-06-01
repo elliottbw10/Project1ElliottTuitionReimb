@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Home</title>
+</head>
+<body>
+	<div>
+		<h2>Reimbursement Form</h2>
+	</div>
+	<div>
+		<form enctype = "application/json" method = "POST" id="trmsForm">
+			User Name: <input type = "text" name = "uName">
+			<br>
+			First Name: <input type ="text" name = "fName">
+			<br>
+			Last Name: <input type = "text" name = "lName">
+			<br>
+			Class Type: <select id = "classType" name= "classType">
+			<option value="University Course">University Course</option>
+			<option value="Seminar">Seminar</option>
+			<option value="Certification Prep">Certification Prep.</option>
+			<option value="Certification">Certification</option>
+			<option value="Technical Training">Technical Training</option>
+			<option value="Other">Other</option>
+			</select>
+			<br>
+			Cost: <input type = "text" name = "cost">
+			<br>
+			Class Grading: <select id= "classGrade" name= "classGrade">
+			<option value="A-F">A-F</option>
+			<option value="P/F">P/F</option>
+			<option value="Presentation">Presentation</option>
+			</select>
+			<br>
+			Description: <textarea id ="desc" name ="desc" rows="4" cols="50">Enter Additional Info</textarea>
+			<br>
+			Start Date: <input type = "date" name = "Sdate">
+		</form>
+	</div>
+	<script type="text/javascript" src = tut.js></script>
+</body>
+</html>

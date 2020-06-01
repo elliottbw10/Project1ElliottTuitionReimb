@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<div>
+		<h2>Overlord Login</h2>
+	</div>
+	<div>
+	<form method="post" action="overlog">
+	User Name:<input type="text" name="fName" /><br/>
+	Password:<input type="text" name="pass" /><br/>
+	<input type="submit" value="login" />
+	</form>
+	</div>
+</body>
+</html>

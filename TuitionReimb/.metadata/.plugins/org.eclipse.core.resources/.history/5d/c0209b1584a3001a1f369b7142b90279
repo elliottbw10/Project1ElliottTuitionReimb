@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Tuition Reimb</title>
+</head>
+<body>
+	<div>
+		<h2>Employee Login</h2>
+	</div>
+	<div>
+	<form method="post" action="login">
+	User Name:<input type="text" name="fName" /><br/>
+	Password:<input type="text" name="pass" /><br/>
+	<input type="submit" value="login" />
+	</form>
+	</div>
+	
+	<div>
+		<h2>Supervisor</h2>
+	</div>
+	<div>
+	<form method="post" action="slogin">
+	User Name:<input type="text" name="fName" /><br/>
+	Password:<input type="text" name="pass" /><br/>
+	<input type="submit" value="login" />
+	</form>
+	</div>
+</body>
+</html>

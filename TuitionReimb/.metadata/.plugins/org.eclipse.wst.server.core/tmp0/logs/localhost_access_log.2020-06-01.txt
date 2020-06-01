@@ -1,0 +1,10 @@
+127.0.0.1 - - [01/Jun/2020:00:00:41 -0400] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [01/Jun/2020:00:01:32 -0400] "GET /TuitionReimb HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [01/Jun/2020:00:01:34 -0400] "GET /TuitionReimb/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [01/Jun/2020:00:01:39 -0400] "POST /TuitionReimb/home HTTP/1.1" 200 378
+0:0:0:0:0:0:0:1 - - [01/Jun/2020:00:01:46 -0400] "POST /TuitionReimb/superlogin HTTP/1.1" 200 2333
+0:0:0:0:0:0:0:1 - - [01/Jun/2020:00:01:46 -0400] "GET /TuitionReimb/stut.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [01/Jun/2020:00:02:14 -0400] "POST /TuitionReimb/supAD HTTP/1.1" 200 524
+0:0:0:0:0:0:0:1 - - [01/Jun/2020:00:03:43 -0400] "POST /TuitionReimb/home HTTP/1.1" 200 378
+0:0:0:0:0:0:0:1 - - [01/Jun/2020:00:03:48 -0400] "POST /TuitionReimb/superlogin HTTP/1.1" 200 2333
+0:0:0:0:0:0:0:1 - - [01/Jun/2020:00:04:04 -0400] "POST /TuitionReimb/supAD HTTP/1.1" 200 524
