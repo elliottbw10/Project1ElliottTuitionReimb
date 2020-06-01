@@ -1,0 +1,10 @@
+package com.revature.util;
+
+public class MathTime {
+	public int University80(int amt, int cost) {
+		cost = (int) (cost * (.80));
+		
+		amt = amt - cost;
+		return amt;
+	}
+}

@@ -37,6 +37,7 @@ function loadForm(fr){
 	document.getElementById("appCode1").innerHTML = fr.appCode1;
 	document.getElementById("appCode2").innerHTML = fr.appCode2;
 	document.getElementById("appCode3").innerHTML = fr.appCode3;
+	document.getElementById("reason").innerHTML = fr.reason;
 }
 
 function jsonBuilder(){

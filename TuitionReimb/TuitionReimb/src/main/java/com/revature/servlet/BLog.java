@@ -17,6 +17,7 @@ import com.revature.dao.TuitionDao;
  * Servlet implementation class BLog
  */
 public class BLog extends HttpServlet {
+	public static String userName;
 	private static final long serialVersionUID = 1L;
       
     public BLog() {
@@ -36,7 +37,8 @@ public class BLog extends HttpServlet {
 			sess.setAttribute("empid", em.getuName());
 			sess.setAttribute("fname", em.getfName());
 			sess.setAttribute("balance", em.getAmt());
-			RequestDispatcher rd = request.getRequestDispatcher("empHome.html");
+			userName= (String) sess.getAttribute("empid");
+			RequestDispatcher rd = request.getRequestDispatcher("BenHome.html");
 			rd.forward(request, response);
 		}
 		else{

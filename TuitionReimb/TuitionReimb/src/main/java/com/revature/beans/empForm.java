@@ -16,6 +16,7 @@ public class empForm {
 	private int appCode1;
 	private int appCode2;
 	private int appCode3;
+	private String reason;
 	
 	public empForm() {
 		super();
@@ -23,7 +24,7 @@ public class empForm {
 	}
 
 	public empForm(String uName, String fName, String lName, String classType, int classCost, String classGrade,
-			String descript, Date classStart, int formNum, int appCode1, int appCode2, int appCode3) {
+			String descript, Date classStart, int formNum, int appCode1, int appCode2, int appCode3, String reason) {
 		super();
 		this.uName = uName;
 		this.fName = fName;
@@ -37,17 +38,7 @@ public class empForm {
 		this.appCode1 = appCode1;
 		this.appCode2 = appCode2;
 		this.appCode3 = appCode3;
-	}
-
-	public empForm(String uName, String fName, String lName, int formNum, int appCode1, int appCode2, int appCode3) {
-		super();
-		this.uName = uName;
-		this.fName = fName;
-		this.lName = lName;
-		this.formNum = formNum;
-		this.appCode1 = appCode1;
-		this.appCode2 = appCode2;
-		this.appCode3 = appCode3;
+		this.reason = reason;
 	}
 
 	public String getuName() {
@@ -146,11 +137,20 @@ public class empForm {
 		this.appCode3 = appCode3;
 	}
 
+	public String getReason() {
+		return reason;
+	}
+
+	public void setReason(String reason) {
+		this.reason = reason;
+	}
+
 	@Override
 	public String toString() {
 		return "empForm [uName=" + uName + ", fName=" + fName + ", lName=" + lName + ", classType=" + classType
 				+ ", classCost=" + classCost + ", classGrade=" + classGrade + ", descript=" + descript + ", classStart="
 				+ classStart + ", formNum=" + formNum + ", appCode1=" + appCode1 + ", appCode2=" + appCode2
-				+ ", appCode3=" + appCode3 + "]";
+				+ ", appCode3=" + appCode3 + ", reason=" + reason + "]";
 	}
+
 }

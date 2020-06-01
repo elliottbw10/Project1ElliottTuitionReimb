@@ -1,0 +1,45 @@
+package com.revature.util;
+
+public class MathTime {
+	public int University80(int amt, int cost) {
+		cost = (int) (cost * (.80));
+		
+		amt = amt - cost;
+		return amt;
+	}
+	
+	public int Seminar60(int amt, int cost) {
+		cost = (int) (cost * (.60));
+		
+		amt = amt -cost;
+		return amt;
+	}
+	
+	public int Prep75(int amt, int cost) {
+		cost = (int) (cost * (.75));
+		
+		amt = amt -cost;
+		return amt;
+	}
+	
+	public int Cert100(int amt, int cost) {
+		cost = (int) (cost * (1));
+		
+		amt = amt -cost;
+		return amt;
+	}
+	
+	public int Train90(int amt, int cost) {
+		cost = (int) (cost * (.90));
+		
+		amt = amt -cost;
+		return amt;
+	}
+	
+	public int Other30(int amt, int cost) {
+		cost = (int) (cost * (.30));
+		
+		amt = amt -cost;
+		return amt;
+	}
+}

@@ -36,7 +36,7 @@ public class HLog extends HttpServlet {
 			sess.setAttribute("empid", em.getuName());
 			sess.setAttribute("fname", em.getfName());
 			sess.setAttribute("balance", em.getAmt());
-			RequestDispatcher rd = request.getRequestDispatcher("empHome.html");
+			RequestDispatcher rd = request.getRequestDispatcher("headHome.html");
 			rd.forward(request, response);
 		}
 		else{

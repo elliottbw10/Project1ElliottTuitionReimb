@@ -10,4 +10,6 @@
 <fullyQualifiedTypeName name="java.sql.Statement"/>
 <fullyQualifiedTypeName name="com.revature.servlet.SLog"/>
 <fullyQualifiedTypeName name="com.revature.dao.TuitionDao"/>
+<fullyQualifiedTypeName name="com.revature.servlet.BLog"/>
+<fullyQualifiedTypeName name="com.revature.util.MathTime"/>
 </qualifiedTypeNameHistroy>

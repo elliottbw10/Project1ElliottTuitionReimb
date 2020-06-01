@@ -37,7 +37,7 @@ public class OLog extends HttpServlet {
 			sess.setAttribute("empid", em.getuName());
 			sess.setAttribute("fname", em.getfName());
 			sess.setAttribute("balance", em.getAmt());
-			RequestDispatcher rd = request.getRequestDispatcher("empHome.html");
+			RequestDispatcher rd = request.getRequestDispatcher("overHome.html");
 			rd.forward(request, response);
 		}
 		else{
